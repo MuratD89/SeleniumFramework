@@ -1,5 +1,6 @@
 package com.cydeo.step_definitions;
 
+import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
@@ -38,8 +39,8 @@ public class Hooks {
         }
 
 
-        //BrowserUtils.sleep(5);
-        Driver.closeDriver();
+          BrowserUtils.sleep(5);
+          Driver.closeDriver();
 
         //System.out.println("====Closing browser using cucumber @After");
         //System.out.println("====Scenario ended/ Take screenshot if failed!");
