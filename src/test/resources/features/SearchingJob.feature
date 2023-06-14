@@ -4,7 +4,7 @@ Feature: Searching TXTPACE Functionality
   As a user, I should be able to search on the main page
 
 
-Scenario: User should be able to search the page
+Scenario: User should be able to search the main page
   When user enters the main page
   And user clicks OverSoftware button
   And user clicks overview button

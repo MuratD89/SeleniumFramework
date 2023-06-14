@@ -19,24 +19,6 @@ public class SearchingJob {
       @FindBy(xpath = "(//a[.='Overview'])[1]")
       public WebElement OverviewBtn;
 
-      @FindBy(xpath = "(//a[.='Contact'])[1]")
-      public WebElement contactUsbtn;
-
-      @FindBy(xpath="//div[@class='lin']")
-      public WebElement LinkedInbtn;
-
-      @FindBy(xpath = "//a[.='Contact']")
-      public WebElement contact;
-
-     @FindBy( id ="ember323")
-     public WebElement JobsBtn;
-
-     @FindBy(xpath = "//span[.='Quality Assurance Engineer (m/f/d)']")
-    public WebElement btn;
-
-     @FindBy(xpath = "//title[.='PACE Aerospace Engineering & Information Technology']")
-    public WebElement title;
-
 
 
 
