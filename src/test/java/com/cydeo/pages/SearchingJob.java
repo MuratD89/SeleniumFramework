@@ -12,12 +12,8 @@ public class SearchingJob {
     }
 
 
-
-      @FindBy (xpath="(//a[.='Our Software'])[1]")
-      public WebElement OurSoftwareBtn;
-
-      @FindBy(xpath = "(//a[.='Overview'])[1]")
-      public WebElement OverviewBtn;
+      @FindBy(xpath = "//a[@aria-label='Button']")
+      public WebElement bachelor;
 
 
 

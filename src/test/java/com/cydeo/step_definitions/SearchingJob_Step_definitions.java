@@ -21,14 +21,9 @@ public class SearchingJob_Step_definitions extends SearchingJob {
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
     }
 
-    @When("user clicks OverSoftware button")
-    public void user_clicks_over_software_button() {
-        BrowserUtils.sleep(1);
-       searchingJob.OurSoftwareBtn.click();
-    }
-    @When("user clicks overview button")
-    public void user_clicks_overview_button() {
-        searchingJob.OverviewBtn.click();
+    @And("user clicks master button")
+    public void userClicksMasterButton() {
+        searchingJob.bachelor.click();
     }
 
     @And("user scroll down and up")
@@ -51,9 +46,11 @@ public class SearchingJob_Step_definitions extends SearchingJob {
 
     @Then("user should see the main page")
     public void userShouldSeeTheMainPage() {
-        String expectedTitle="PACE Aerospace Engineering & Information Technology";
+        String expectedTitle="Dein Studium an der IU | IU Internationale Hochschule";
         String actualTitle = Driver.getDriver().getTitle();
         System.out.println("actualTitle = " + actualTitle);
         Assert.assertEquals(expectedTitle, actualTitle);
     }
+
+
 }
